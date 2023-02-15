@@ -72,7 +72,7 @@ describe "Bundler" do
   describe "bundle install" do
     describe "Gemfile.lock" do
       it "exists after running `bundle install`" do
-        expect(File.exists?('Gemfile.lock')).to eq(true)
+        expect(File.exist?('Gemfile.lock')).to eq(true)
       end
     end
   end
